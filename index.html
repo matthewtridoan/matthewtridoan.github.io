@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Source Code Pro", Arial, sans-serif;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+      }
+      .container {
+        background: #2b2931;
+        border-left: 8px solid #4caf50;
+        border-radius: 5px;
+        padding: 20px;
+        min-width: 35%;
+        max-width: 800px;
+        width: 100%;
+        color: #ddd;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #eee;
+        display: flex;
+        align-items: center;
+      }
+      section {
+        margin: 20px 0;
+        text-align: left;
+      }
+      h2 {
+        font-size: 1.5em;
+        color: #4caf50;
+        margin-bottom: 10px;
+      }
+
+      .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+      }
+
+      .name {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 2.5em;
+        color: #eee;
+      }
+
+      .header h1 {
+        margin: 0;
+      }
+
+      .header h3 {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .social-icons a {
+        color: #ddd;
+        font-size: 1.5em;
+        text-decoration: none;
+      }
+
+      .social-icons a:hover {
+        color: #4caf50;
+      }
+
+      .contact a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .tech-icons {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+      }
+
+      .tech-icons i {
+        color: #4caf50;
+        font-size: 1.5em;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 0.5em auto;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 0.5em;
+      }
+
+      ul li {
+        line-height: 1.6;
+        font-size: 1em;
+        color: #ddd;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2em;
+        }
+        h2 {
+          font-size: 1.2em;
+        }
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="social-icons">
+          <a href="https://github.com/matthewtridoan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/matthewtridoan" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:matthewtridoan@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+
+        <h1 class="name">Matthew Tri Doan</h1>
+
+        <h1>👨‍💻</h1>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <div class="header">
+          <h3>U.C. Berkeley College of Engineering</h3>
+          <h3>Graduating May 2028</h3>
+        </div>
+        <p>B.S. Engineering Mathematics & Statistics</p>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <div class="header">
+          <h3>Cybersecurity Intern @ Calif.io</h3>
+          <h3>Jun - Aug 2023</h3>
+        </div>
+        <ul>
+          <li>
+            Designed and implemented Python scripts to crawl customer news
+            websites and sort the articles by total number of likes in the
+            comments section.
+          </li>
+          <li>
+            Designed and implemented Shell scripts to automate the deployment of
+            cloud-hosted Linux systems running Wordpress, email, and DNS
+            servers.
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="header">
+          <h3>Portfolio Website</h3>
+          <div class="tech-icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+          </div>
+        </div>
+        <ul>
+          <li>A responsive personal portfolio to showcase my work</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:matthewtridoan@gmail.com">matthewtridoan@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/matthewtridoan" target="_blank"
+            >linkedin.com/in/matthewtridoan</a
+          >
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/matthewtridoan" target="_blank"
+            >github.com/matthewtridoan</a
+          >
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
