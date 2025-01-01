@@ -29,7 +29,6 @@
         border-left: 8px solid #4caf50;
         border-radius: 5px;
         padding: 20px;
-        min-width: 35%;
         max-width: 800px;
         width: 100%;
         color: #ddd;
@@ -59,16 +58,25 @@
         gap: 15px;
       }
 
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.75em 0;
+      }
+
+      .header h1 {
+        margin: 0;
+      }
+
       .name {
         position: absolute;
         left: 50%;
         transform: translate(-50%);
         font-size: 2.5em;
         color: #eee;
-      }
-
-      .header h1 {
-        margin: 0;
+        text-align: center;
       }
 
       .header h3 {
@@ -92,6 +100,16 @@
         color: #4caf50;
       }
 
+      .projects a {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      .projects a:hover {
+        text-decoration: underline;
+        color: #4caf50;
+      }
+
       .contact a {
         color: #4caf50;
         text-decoration: none;
@@ -104,7 +122,6 @@
       .tech-icons {
         display: flex;
         gap: 10px;
-        margin-left: auto;
       }
 
       .tech-icons i {
@@ -129,15 +146,53 @@
       }
 
       @media (max-width: 600px) {
+        body {
+          padding: 0;
+        }
+
+        .container {
+          height: 100%;
+        }
+
         h1 {
           font-size: 2em;
         }
         h2 {
           font-size: 1.2em;
         }
+        h3 {
+          font-size: 1em;
+        }
+        p {
+          font-size: 0.9em;
+        }
+        ul {
+          font-size: 0.9em;
+        }
         .header {
           flex-direction: column;
           align-items: flex-start;
+          gap: 0;
+        }
+        .header-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+        .tech-icons {
+          margin-top: 0.5em;
+        }
+        .name {
+          position: relative;
+          transform: none;
+          text-align: left;
+          left: 0;
+          margin-top: 15px;
+        }
+        .emoji {
+          order: 2;
+          margin: 0;
         }
       }
     </style>
@@ -145,21 +200,23 @@
   <body>
     <div class="container">
       <section class="header">
-        <div class="social-icons">
-          <a href="https://github.com/matthewtridoan" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://linkedin.com/in/matthewtridoan" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="mailto:matthewtridoan@gmail.com"
-            ><i class="fas fa-envelope"></i
-          ></a>
+        <div class="header-top">
+          <div class="social-icons">
+            <a href="https://github.com/matthewtridoan" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/matthewtridoan" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:matthewtridoan@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+
+          <h1 class="emoji">👨‍💻</h1>
         </div>
 
         <h1 class="name">Matthew Tri Doan</h1>
-
-        <h1>👨‍💻</h1>
       </section>
 
       <section class="education">
@@ -194,7 +251,13 @@
       <section class="projects">
         <h2>Projects</h2>
         <div class="header">
-          <h3>Portfolio Website</h3>
+          <h3>
+            <a
+              href="https://github.com/matthewtridoan/matthewtridoan.github.io"
+              target="_blank"
+              >Portfolio Website</a
+            >
+          </h3>
           <div class="tech-icons">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
